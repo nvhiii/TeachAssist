@@ -1,6 +1,7 @@
 # TeachAssist
 
 TeachAssist is a web-app to help teachers improve quality of learning by reducing their administrative tasks.
+
 _Disclaimer: I forked my previous code project's for the user login and authentication since I had it set-up already, but used different API project keys in order to maintain data security and relevancy_
 
 ## Description
