@@ -1,16 +1,16 @@
-# stacqd
+# TeachAssist
 
-Stacqd is a web-app to help tech students and enthusiasts make their resume "stacqd".
+TeachAssist is a web-app to help teachers improve quality of learning by reducing their administrative tasks.
 
 ## Description
 
-An all-in-one web-app to find tech-related experiences. It will help get aspiring tech enthusiasts "stacqd" resumes via these variety of experiences provided.
+Ubiquitous and intelligent teaching assistant, meant to help educators.
 
 ## Getting Started
 
 ### Dependencies
 
-- MongoDB
+- if locally, run "npm i" in both root dir and client folder
 - Express.js
 - React.js + Vite
 - Node.js (v18+)
@@ -40,7 +40,7 @@ Backend
 
 ## Contact Info
 
-- please contact me at nahikhan16@gmail.com
+- Contact me at nahikhan16@gmail.com
 
 ## Authors
 
@@ -52,7 +52,4 @@ This project is licensed under the MIT license. Please refer to LICENSE.md
 
 ## Acknowledgements
 
-- Thank you to my supervisor for CISC 4900, Mohammad Hafizur Rahman Khan
-- Professor Avshalom
 - Professor Chuang
-- Professor Lapid
