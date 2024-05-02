@@ -85,7 +85,7 @@ export default function SignIn() {
           <span className="text-blue-700">Sign Up</span>
         </Link>
       </div>
-      <p className="text-red-700 mt-4">
+      <p className="bg-orange-400 mt-4">
         {error ? error.message || "Something went wrong!" : ""}
       </p>
     </div>

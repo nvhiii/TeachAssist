@@ -4,7 +4,6 @@ import About from "./pages/About.tsx";
 import Signin from "./pages/Signin.jsx";
 import Signup from "./pages/Signup.jsx";
 import Profile from "./pages/Profile.jsx";
-import ViewOpportunity from "./pages/Dashboard.tsx";
 import Header from "./components/Header.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 
@@ -20,8 +19,6 @@ export default function App() {
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
         </Route>
-        <Route path="/browse-opportunities" element={<BrowseOpportunities />} />
-        <Route path="/view-opportunity" element={<ViewOpportunity />} />
       </Routes>
     </BrowserRouter>
   );

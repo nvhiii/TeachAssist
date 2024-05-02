@@ -6,7 +6,7 @@ export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
 
   return (
-    <div className="bg-slate-200">
+    <div className="bg-orange-400">
       <div className="flex justify-between items-center mx-auto max-w-6xl p-3">
         <Link to="/">
           <h1 className="font-bold">TA</h1>
@@ -15,9 +15,7 @@ export default function Header() {
           <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="/about">
-            <li>About</li>
-          </Link>
+          <Link to="/about">{currentUser ? <li>Dashboard</li> : ""}</Link>
           <Link to="/profile">
             {currentUser ? (
               <img
