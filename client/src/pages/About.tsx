@@ -9,22 +9,51 @@ export default function About() {
 
   return (
     <div className="px-4 py-12 max-w-2xl mx-auto">
-      <div className="flex justify-between">
+      <div className="flex justify-between m-3">
         {/* user greeting */}
-        <div className="h-20 w-40 border-solid border-2 border-orange-400 rounded-lg p-3 flex flex-col">
+        <div className="h-20 w-40 border-solid border-2 border-orange-400 rounded-xl p-3 flex flex-col m-4">
           Welcome, {currentUser.username}
-          <div className="text-xs">Plan: {}</div>
+          <div>Plan: Free</div>
         </div>
         {/* plans, first check if plan purchased or not */}
-        <div className="h-4 w-20 border-solid border-2 border-indigo-600">
-          Plans
+        <div>
+          <div className="text-xl flex justify-center py-3">Plan(s)</div>
+          <div className="flex gap-4">
+            <div className="flex">
+              <div className="border-solid border-2 border-orange-400 px-2 py-4 flex flex-col justify-between rounded-xl gap-10">
+                <div className="">Free</div>
+                <div className="text-xs italic">
+                  <div>Perks:</div>
+                  <ul>
+                    <li>Scheduling assistance</li>
+                    <li>Administrative tasks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="border-solid border-2 border-orange-400 px-2 py-4 flex flex-col justify-between rounded-xl gap-20">
+                <div className="">Pro</div>
+                <div className="text-xs italic">
+                  <div>Perks:</div>
+                  <ul>
+                    <li>24/7 Support</li>
+                    <li>Email notifications</li>
+                    <li>Automated Assignment Grading</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <Link to="/plans">Plans</Link>
-        {/* cart + checkout */}
-        <div className="h-40 w-20 border-solid border-2 border-indigo-600"></div>
       </div>
-      {/* analytics */}
-      <div className="h-4 w-20 border-solid border-2 border-indigo-600">!</div>
+      {/* contact bar */}
+      <div className="mx-7">Contact us for pricing: 1-800-333-5555</div>
+      {/* Grading Redirect / Scheduling Redirect */}
+      <Link to="/scheduler">
+        <button className="bg-orange-400 m-7 p-2 rounded-l">Scheduler</button>
+      </Link>
+      <Link to="/tasks"></Link>
     </div>
   );
 }

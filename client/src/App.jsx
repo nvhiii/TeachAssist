@@ -6,6 +6,7 @@ import Signup from "./pages/Signup.jsx";
 import Profile from "./pages/Profile.jsx";
 import Header from "./components/Header.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
+import Scheduler from "./pages/Scheduler.tsx";
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
         <Route path="/sign-up" element={<Signup />} />
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
+        </Route>
+        <Route element={<PrivateRoute />}>
+          <Route path="/scheduler" element={<Scheduler />} />
         </Route>
       </Routes>
     </BrowserRouter>
